@@ -1,4 +1,4 @@
-import { Timer } from "./timer";
+import { Timer } from "./timer.js";
 
 const btn = document.querySelector("#add-timer");
 const timeInfo = document.querySelector("#time-input");
