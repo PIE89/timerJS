@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+* {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+body {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: rgb(255, 165, 0, 0.5);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="number"] {
+  border: 1px Solid #000;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#add-timer {
+  background-color: #000;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 1rem;
+
+  transition: all 0.2s ease-in;
+}
+
+#add-timer:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.stop,
+.pause {
+  font-size: 1rem;
+
+  padding: 0.5rem;
+  border: 1px solid #000;
+
+  transition: all 0.2s ease-in;
+}
+
+.stop {
+  background-color: red;
+}
+
+.pause {
+  background-color: yellow;
+}
+
+.resume {
+  background-color: green;
+}
+
+li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+span {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #000;
+}
